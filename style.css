@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.menu-bar{
+  background-color: #ffde7d;
+  text-align: center;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+
+}
+.menu-bar ul li{
+  width:120px;
+  padding:3px 15px;
+  margin:7px 15px;
+}
+.menu-bar a{
+  text-decoration: none;
+  color: black;
+}
+.active,.menu-bar ul li:hover{
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+}
+.fa{
+  margin-right: 8px;
+}
+.sub-menu1,.sub-menu2{
+  display:none ;
+}
+.menu-bar ul li:hover .sub-menu1{
+  display: block;
+  position: absolute;
+  margin-left:-15px;
+  margin-top: 20px;
+  background:#ffde7d;
+}
+ .menu-bar ul li:hover .sub-menu2{
+display: block;
+position: absolute;
+margin-left:-15px;
+margin-top: 5px;
+background:#ffde7d;
+}
+.menu-bar ul li:hover .sub-menu1 ul,.sub-menu2 ul{
+  display: block;
+  margin:10px;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li,.sub-menu2 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  border-radius: 3px;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu2 ul li:last-child{
+  border-bottom: none;
+}
